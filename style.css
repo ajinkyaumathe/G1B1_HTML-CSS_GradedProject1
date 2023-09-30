@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(83, 82, 82);
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+nav {
+    margin: 0;
+    position: sticky;
+
+
+}
+
+.menu {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    /* margin-bottom: 0; */
+
+}
+
+.menu>li:hover {
+    background-color: black;
+}
+
+#ddl1,
+#ddl2 {
+    margin: 0;
+    top: 44px;
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 0;
+
+}
+
+.menu li:nth-child(2):hover #ddl1,
+.menu li:nth-child(3):hover #ddl2 {
+    display: block;
+    margin: none;
+}
+
+#ddl1 li,
+#ddl2 li {
+    border: 1px solid white;
+    width: auto;
+    display: block;
+    padding: 10px;
+
+}
+
+#ddl1 li a,
+#ddl2 li a {
+    color: steelblue;
+    font-size: large;
+    left: 10px;
+}
+
+#ddl1 li:hover,
+#ddl2 li:hover {
+    background-color: rgb(204, 202, 202);
+    color: black;
+}
+
+footer h3 {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.ads {
+    border: 2px solid steelblue;
+    margin: 5px;
+    height: 450px;
+    width: auto;
+    animation: adsAnimation;
+    animation-duration: 25s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@keyframes adsAnimation {
+    0% {
+        background-image: url("./Images/Animation/ani3.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url("./Images/Animation/ani4.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url("./Images/Animation/ani1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url("./Images/Animation/ani2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url("./Images/Animation/ani5.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+}
+
+/* .products{
+    overflow-x: scroll;
+    white-space: nowrap;
+} */
+
+.products h2{
+    margin-left: 20px;
+}
+
+.products div {
+    margin: 40px;
+    /* min-width: 250px;
+    min-height: 20px; */
+    border: none;
+    background-color: rgb(246, 239, 250);
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px black;
+    display: inline-block;
+    transition: all ease 0.4s;
+
+    
+}
+
+.products div:hover {
+
+    scale: 110%;
+}
+
+.products div h3 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+
+.products div img {
+    width: 230px;
+    height: 120px;
+    margin-left: 10px;
+}
+
+.products div p {
+    bottom: 0;
+    margin: 10px;
+    color: steelblue;
+}
+
+.products div h4 {
+    border: 3px solid rgb(158, 154, 208);
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: steelblue;
+
+}
+
+.products div h4:active {
+    background-color: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+    border-radius: 4px;
+    font-weight: bold;
+}
